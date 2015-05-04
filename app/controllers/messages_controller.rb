@@ -1,5 +1,3 @@
-Ngrok::Tunnel.start
-
 class MessagesController < ApplicationController
   def index
     client
