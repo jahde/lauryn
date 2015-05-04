@@ -23,10 +23,10 @@ class IncomingController < ApplicationController
   #   end.text
   # end
 
-  def send
+  def send_message
     body = params[:Body]
 
-    twiml = Twilio::Twiml::Response.new do |r|
+    @twiml = Twilio::TwiML::Response.new do |r|
       # if body == "hello"
       #     r.Message "Hi!"
       # else
@@ -34,7 +34,8 @@ class IncomingController < ApplicationController
       # end
       r.Message "What up bruh."
     end
-    twiml.text
+
+    render 'send_message.xml.erb', :content_type => 'text/xml'
   end
 
 

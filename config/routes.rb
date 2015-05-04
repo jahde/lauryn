@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   resources :messages
-  post '/incoming', to: 'incoming#send'
-  get '/incoming', to: 'incoming#send'
-  # resources :outgoing
+  # post '/incoming', to: 'incoming#send_message'
+  get '/incoming', to: 'incoming#send_message'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

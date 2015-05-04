@@ -1,2 +1,0 @@
-class OutgoingController < ApplicationController
-end
