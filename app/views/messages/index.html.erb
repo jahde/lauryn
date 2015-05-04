@@ -1,0 +1,6 @@
+<h1>Lauryn</h1>
+<% @client.account.messages.list({}).each do |message| %>
+<ul>
+  <li><%= message.body %></li>
+</ul>
+<% end %>
