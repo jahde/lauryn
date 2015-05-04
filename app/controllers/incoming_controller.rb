@@ -27,11 +27,12 @@ class IncomingController < ApplicationController
     body = params[:Body]
 
     twiml = Twilio::Twiml::Response.new do |r|
-      if body == "hello"
-          r.Message "Hi!"
-      else
-          r.Message "Wagwan star! I got a text from you."
-      end
+      # if body == "hello"
+      #     r.Message "Hi!"
+      # else
+      #     r.Message "Wagwan star! I got a text from you."
+      # end
+      r.Message "What up bruh."
     end
     twiml.text
   end
