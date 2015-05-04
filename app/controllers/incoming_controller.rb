@@ -24,6 +24,8 @@ class IncomingController < ApplicationController
   # end
 
   def send
+    body = params[:Body]
+
     twiml = Twilio::Twiml::Response.new do |r|
       if body == "hello"
           r.Message "Hi!"
