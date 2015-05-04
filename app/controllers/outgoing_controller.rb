@@ -1,0 +1,2 @@
+class OutgoingController < ApplicationController
+end

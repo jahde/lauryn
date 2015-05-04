@@ -6,6 +6,7 @@ class MessagesController < ApplicationController
   private
 
   def client
+    twilio_phone_number = "9734594512"
     account_sid = 'AC963408da3e7c1fbc06511e5cda6a0e9e'
     auth_token = '0c2ce2f9669a32c23a9f82bc44b30b53'
 
