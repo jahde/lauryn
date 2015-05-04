@@ -6,9 +6,9 @@ class MessagesController < ApplicationController
   private
 
   def client
-    twilio_phone_number = "9734594512"
-    account_sid = 'AC963408da3e7c1fbc06511e5cda6a0e9e'
-    auth_token = '0c2ce2f9669a32c23a9f82bc44b30b53'
+    twilio_phone_number = "YOUR NUMBER HERE"
+    account_sid = 'YOUR KEY HERE'
+    auth_token = 'YOUR KEY HERE'
 
     # set up a client to talk to the Twilio REST API
     @client = Twilio::REST::Client.new account_sid, auth_token
